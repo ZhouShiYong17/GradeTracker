@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ViewModuleActivity"
+    tools:showIn="@layout/activity_view_module">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewModuleDynModuleShortName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewModuleDynModuleLongName"
+            app:srcCompat="@drawable/ic_tag_name" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewModuleDynTotalCredit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewModuleDynCreditUnit"
+            app:srcCompat="@drawable/ic_tag_weightage" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewModuleDynTargetGradeDescriptors"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewModuleDynTargetGrade"
+            app:srcCompat="@drawable/ic_tag_target" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewModuleDynModuleGradeDescriptor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewModuleDynModuleGrade"
+            app:srcCompat="@drawable/ic_tag_score" />
+
+        <TextView
+            android:id="@+id/viewModuleDynModuleGradeDescriptor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXCELLENT"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintStart_toStartOf="@+id/viewModuleDynModuleGrade"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynModuleGrade" />
+
+        <TextView
+            android:id="@+id/viewModuleDynCreditUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="4 CREDIT UNITS"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/viewModuleDynTotalAssignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="9 assignments total"
+            android:textColor="@color/icOnWhite"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynModuleSemester" />
+
+        <TextView
+            android:id="@+id/viewModuleDynModuleSemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Year 3 Semester 1"
+            app:layout_constraintStart_toStartOf="@+id/viewModuleDynModuleLongName"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynModuleShortName" />
+
+        <TextView
+            android:id="@+id/viewModuleDynModuleLongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Design for User Interaction"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/viewModuleDynModuleShortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEUI"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintStart_toStartOf="@+id/viewModuleDynModuleLongName"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynModuleLongName" />
+
+        <TextView
+            android:id="@+id/viewModuleDynTotalCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 OUT OF 25"
+            android:textColor="@color/icOnWhite"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/viewModuleDynCreditUnit"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynCreditUnit" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynTotalAssignment" />
+
+        <TextView
+            android:id="@+id/viewModuleDynModuleGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="A"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynTargetGradeDescriptors" />
+
+        <TextView
+            android:id="@+id/viewModuleDynTargetGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="B+"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynTotalCredit" />
+
+        <TextView
+            android:id="@+id/viewModuleDynTargetGradeDescriptors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERY GOOD"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintStart_toStartOf="@+id/viewModuleDynTargetGrade"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynTargetGrade" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynModuleGradeDescriptor" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewModuleDynModuleImprovement"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewModuleDynModuleImprovement"
+            app:srcCompat="@drawable/ic_tag_trend" />
+
+        <TextView
+            android:id="@+id/viewModuleDynModuleImprovement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="You improved from a B to an A. Good job! (+0.02 CGPA)"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/viewModuleDynConsistencyScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Consistency Score: POOR (EXPERIMENTAL)"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/viewModuleDynModuleImprovement"
+            app:layout_constraintTop_toBottomOf="@+id/viewModuleDynModuleImprovement" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

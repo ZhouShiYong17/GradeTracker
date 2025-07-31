@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="pref_set_current_semester"
+        android:title="@string/pref_title_select_current_semester"
+        android:dialogTitle="@string/pref_dialog_title_select_current_semester"
+        android:defaultValue="1" />
+
+    <PreferenceCategory
+        android:title="@string/pref_google_drive">
+
+        <Preference
+            android:key="pref_import_drive"
+            android:title="@string/action_import_google_drive">
+            <intent android:action="android.intent.action.DIAL" />
+        </Preference>
+
+        <Preference
+            android:key="pref_export_drive"
+            android:title="@string/action_export_google_drive">
+            <intent android:action="android.intent.action.DIAL" />
+        </Preference>
+    </PreferenceCategory>
+        <Preference
+            android:key="pref_test_daily_quote"
+            android:title="@string/action_quote">
+            <intent android:action="sg.com.mapp.gradetracker.QuoteActivity" />
+        </Preference>
+
+
+
+</PreferenceScreen>

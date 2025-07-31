@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="appbar_height">128dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="bottomsheet_gap">18dp</dimen>
+    <dimen name="unit">56dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="module_height">128dp</dimen>
+    <dimen name="module_width">88dp</dimen>
+    <dimen name="module_grade_height">88dp</dimen>
+    <dimen name="list_item_height">64dp</dimen>
+    <dimen name="chart_app_bar_height">200dp</dimen>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/colorControlHighlight"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/labelCGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/label_cgpa"
+        android:textAllCaps="true"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/dynCGPA"
+        app:layout_constraintTop_toTopOf="@+id/dynCGPA" />
+
+    <TextView
+        android:id="@+id/dynCGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.6"
+        android:textAppearance="@style/AppTheme.Numerical"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

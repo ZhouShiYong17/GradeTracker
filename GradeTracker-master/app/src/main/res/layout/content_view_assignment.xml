@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ViewAssignmentActivity"
+    tools:showIn="@layout/activity_view_assignment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewAssignDynAssignmentShortName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewAssignDynAssignmentLongName"
+            app:srcCompat="@drawable/ic_tag_name" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewAssignDynAssignmentWeightage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewAssignDynAssignmentWeightagePercent"
+            app:srcCompat="@drawable/ic_tag_weightage" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewAssignDynAssignmentTargetScore"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewAssignDynAssignmentTargetScorePercent"
+            app:srcCompat="@drawable/ic_tag_target" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewAssignDynAssignmentActualScore"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewAssignDynAssignmentActualScorePercentage"
+            app:srcCompat="@drawable/ic_tag_score" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentActualScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 OUT OF 50"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintStart_toStartOf="@+id/viewAssignDynAssignmentActualScorePercentage"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentActualScorePercentage" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentWeightagePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="60.0%"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+        <TextView
+            android:id="@+id/viewAssignDynSemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year 3 Semester 1"
+            android:textColor="@color/icOnWhite"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/viewAssignDynModuleName"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynModuleName" />
+
+        <TextView
+            android:id="@+id/viewAssignDynModuleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Design for User Interaction (DEUI)"
+            app:layout_constraintStart_toStartOf="@+id/viewAssignDynAssignmentLongName"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentShortName" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentLongName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Exam"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentShortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXAM"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintStart_toStartOf="@+id/viewAssignDynAssignmentLongName"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentLongName" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentWeightage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60 OUT OF 100"
+            android:textColor="@color/icOnWhite"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/viewAssignDynAssignmentWeightagePercent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentWeightagePercent" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynSemester" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentActualScorePercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="60.0% FAIR"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentTargetScore" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentTargetScorePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="96.0%"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentWeightage" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentTargetScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="48 OUT OF 50"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintStart_toStartOf="@+id/viewAssignDynAssignmentTargetScorePercent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentTargetScorePercent" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentActualScore" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewAssignDynAssignmentStatistic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewAssignDynAssignmentStatistic"
+            app:srcCompat="@drawable/ic_tag_trend" />
+
+        <TextView
+            android:id="@+id/viewAssignDynAssignmentStatistic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="This assignment caused your grade to drop from A to B. (-0.02 CGPA)"
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/viewAssignDynGradeReminder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:text="It is no longer possible to get an A due to this assignment."
+            android:textColor="@color/icOnWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/viewAssignDynAssignmentStatistic"
+            app:layout_constraintTop_toBottomOf="@+id/viewAssignDynAssignmentStatistic" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>
